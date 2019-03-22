@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  OneFi-Movie
 //
-//  Created by Olatunji Fagbore on 20/03/2019.
-//  Copyright © 2019 Softskan Limited. All rights reserved.
+//  Created by Ayoola Samagbeyi on 21/03/2019.
+//  Copyright © 2019 Ayoola Samagbeyi. All rights reserved.
 //
 
 import UIKit

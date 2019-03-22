@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75754E1065A36F7F57D16924 /* Pods_OneFi_Movie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10AEA3414A5479C12C8C1691 /* Pods_OneFi_Movie.framework */; };
 		E1CAEF682242E23300428A31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CAEF672242E23300428A31 /* AppDelegate.swift */; };
 		E1CAEF6A2242E23300428A31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CAEF692242E23300428A31 /* ViewController.swift */; };
 		E1CAEF6D2242E23300428A31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1CAEF6B2242E23300428A31 /* Main.storyboard */; };
 		E1CAEF702242E23300428A31 /* OneFi_Movie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E1CAEF6E2242E23300428A31 /* OneFi_Movie.xcdatamodeld */; };
 		E1CAEF722242E23600428A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E1CAEF712242E23600428A31 /* Assets.xcassets */; };
 		E1CAEF752242E23600428A31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E1CAEF732242E23600428A31 /* LaunchScreen.storyboard */; };
+		E1CAEF7D2242FDAB00428A31 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CAEF7C2242FDAB00428A31 /* DetailViewController.swift */; };
+		E1CAEF7F2243009C00428A31 /* collectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CAEF7E2243009C00428A31 /* collectionViewCell.swift */; };
+		E1D223F62244F3B80039B846 /* movieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D223F52244F3B80039B846 /* movieTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		10AEA3414A5479C12C8C1691 /* Pods_OneFi_Movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneFi_Movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E19DEDD68AB8BEA818F155 /* Pods-OneFi-Movie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneFi-Movie.debug.xcconfig"; path = "Target Support Files/Pods-OneFi-Movie/Pods-OneFi-Movie.debug.xcconfig"; sourceTree = "<group>"; };
+		76195E33E46ED610E960E1D3 /* Pods-OneFi-Movie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneFi-Movie.release.xcconfig"; path = "Target Support Files/Pods-OneFi-Movie/Pods-OneFi-Movie.release.xcconfig"; sourceTree = "<group>"; };
 		E1CAEF642242E23300428A31 /* OneFi-Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "OneFi-Movie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1CAEF672242E23300428A31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E1CAEF692242E23300428A31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +31,9 @@
 		E1CAEF712242E23600428A31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E1CAEF742242E23600428A31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E1CAEF762242E23600428A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1CAEF7C2242FDAB00428A31 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E1CAEF7E2243009C00428A31 /* collectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionViewCell.swift; sourceTree = "<group>"; };
+		E1D223F52244F3B80039B846 /* movieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = movieTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +41,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75754E1065A36F7F57D16924 /* Pods_OneFi_Movie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7E3C9B7D2F0B5398DF12E751 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10AEA3414A5479C12C8C1691 /* Pods_OneFi_Movie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		E1CAEF5B2242E23300428A31 = {
 			isa = PBXGroup;
 			children = (
 				E1CAEF662242E23300428A31 /* OneFi-Movie */,
 				E1CAEF652242E23300428A31 /* Products */,
+				F8211A8326498A6E530F82AB /* Pods */,
+				7E3C9B7D2F0B5398DF12E751 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +77,51 @@
 		E1CAEF662242E23300428A31 /* OneFi-Movie */ = {
 			isa = PBXGroup;
 			children = (
+				E1D223FB22450D6C0039B846 /* Storyboards */,
+				E1D223FA22450D120039B846 /* ViewControllers */,
+				E1D223F922450D010039B846 /* Views */,
 				E1CAEF672242E23300428A31 /* AppDelegate.swift */,
-				E1CAEF692242E23300428A31 /* ViewController.swift */,
-				E1CAEF6B2242E23300428A31 /* Main.storyboard */,
 				E1CAEF712242E23600428A31 /* Assets.xcassets */,
-				E1CAEF732242E23600428A31 /* LaunchScreen.storyboard */,
 				E1CAEF762242E23600428A31 /* Info.plist */,
 				E1CAEF6E2242E23300428A31 /* OneFi_Movie.xcdatamodeld */,
 			);
 			path = "OneFi-Movie";
+			sourceTree = "<group>";
+		};
+		E1D223F922450D010039B846 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1D223F52244F3B80039B846 /* movieTableViewCell.swift */,
+				E1CAEF7E2243009C00428A31 /* collectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E1D223FA22450D120039B846 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E1CAEF692242E23300428A31 /* ViewController.swift */,
+				E1CAEF7C2242FDAB00428A31 /* DetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E1D223FB22450D6C0039B846 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E1CAEF6B2242E23300428A31 /* Main.storyboard */,
+				E1CAEF732242E23600428A31 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		F8211A8326498A6E530F82AB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				46E19DEDD68AB8BEA818F155 /* Pods-OneFi-Movie.debug.xcconfig */,
+				76195E33E46ED610E960E1D3 /* Pods-OneFi-Movie.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E1CAEF792242E23600428A31 /* Build configuration list for PBXNativeTarget "OneFi-Movie" */;
 			buildPhases = (
+				473FD2F6107E8D27ABB406A2 /* [CP] Check Pods Manifest.lock */,
 				E1CAEF602242E23300428A31 /* Sources */,
 				E1CAEF612242E23300428A31 /* Frameworks */,
 				E1CAEF622242E23300428A31 /* Resources */,
+				2704EB34ECA76705D3C5682F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +192,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2704EB34ECA76705D3C5682F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneFi-Movie/Pods-OneFi-Movie-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OneFi-Movie/Pods-OneFi-Movie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		473FD2F6107E8D27ABB406A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneFi-Movie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E1CAEF602242E23300428A31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -141,6 +247,9 @@
 				E1CAEF702242E23300428A31 /* OneFi_Movie.xcdatamodeld in Sources */,
 				E1CAEF6A2242E23300428A31 /* ViewController.swift in Sources */,
 				E1CAEF682242E23300428A31 /* AppDelegate.swift in Sources */,
+				E1CAEF7F2243009C00428A31 /* collectionViewCell.swift in Sources */,
+				E1D223F62244F3B80039B846 /* movieTableViewCell.swift in Sources */,
+				E1CAEF7D2242FDAB00428A31 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +393,7 @@
 		};
 		E1CAEF7A2242E23600428A31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46E19DEDD68AB8BEA818F155 /* Pods-OneFi-Movie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -302,6 +412,7 @@
 		};
 		E1CAEF7B2242E23600428A31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76195E33E46ED610E960E1D3 /* Pods-OneFi-Movie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
