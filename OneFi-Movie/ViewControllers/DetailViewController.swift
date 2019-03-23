@@ -27,10 +27,14 @@ class DetailViewController: UIViewController {
         self.opaqueView.backgroundColor = UIColor.white.withAlphaComponent(0.7)
         
         //Mark:- Do any additional setup after loading the view.
-        if (detailArray["Poster"]) != nil {
-            let imageurl = detailArray["Poster"] as? String ?? ""
-            DispatchQueue.main.async {
-                self.loadImage(url: imageurl, imageView: self.imageView)
+        if (self.detailArray.count > 0){
+            if let posterImage:String = self.detailArray["Poster"] as? String {
+                if (posterImage != "") {
+                    let imageurl = posterImage
+                    DispatchQueue.main.async {
+                        self.loadImage(url: imageurl, imageView: self.imageView)
+                    }
+                }
             }
         }
         

@@ -17,7 +17,18 @@
 		E1CAEF7D2242FDAB00428A31 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CAEF7C2242FDAB00428A31 /* DetailViewController.swift */; };
 		E1CAEF7F2243009C00428A31 /* collectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1CAEF7E2243009C00428A31 /* collectionViewCell.swift */; };
 		E1D223F62244F3B80039B846 /* movieTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D223F52244F3B80039B846 /* movieTableViewCell.swift */; };
+		E1E10F5022454491005B2D0C /* OneFi_MovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E10F4F22454491005B2D0C /* OneFi_MovieTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E1E10F5222454491005B2D0C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E1CAEF5C2242E23300428A31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E1CAEF632242E23300428A31;
+			remoteInfo = "OneFi-Movie";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		10AEA3414A5479C12C8C1691 /* Pods_OneFi_Movie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneFi_Movie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +45,9 @@
 		E1CAEF7C2242FDAB00428A31 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		E1CAEF7E2243009C00428A31 /* collectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionViewCell.swift; sourceTree = "<group>"; };
 		E1D223F52244F3B80039B846 /* movieTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = movieTableViewCell.swift; sourceTree = "<group>"; };
+		E1E10F4D22454491005B2D0C /* OneFi-MovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "OneFi-MovieTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1E10F4F22454491005B2D0C /* OneFi_MovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneFi_MovieTests.swift; sourceTree = "<group>"; };
+		E1E10F5122454491005B2D0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +56,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				75754E1065A36F7F57D16924 /* Pods_OneFi_Movie.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E10F4A22454491005B2D0C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				E1CAEF662242E23300428A31 /* OneFi-Movie */,
+				E1E10F4E22454491005B2D0C /* OneFi-MovieTests */,
 				E1CAEF652242E23300428A31 /* Products */,
 				F8211A8326498A6E530F82AB /* Pods */,
 				7E3C9B7D2F0B5398DF12E751 /* Frameworks */,
@@ -70,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				E1CAEF642242E23300428A31 /* OneFi-Movie.app */,
+				E1E10F4D22454491005B2D0C /* OneFi-MovieTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +138,15 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
+		E1E10F4E22454491005B2D0C /* OneFi-MovieTests */ = {
+			isa = PBXGroup;
+			children = (
+				E1E10F4F22454491005B2D0C /* OneFi_MovieTests.swift */,
+				E1E10F5122454491005B2D0C /* Info.plist */,
+			);
+			path = "OneFi-MovieTests";
+			sourceTree = "<group>";
+		};
 		F8211A8326498A6E530F82AB /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -146,18 +178,40 @@
 			productReference = E1CAEF642242E23300428A31 /* OneFi-Movie.app */;
 			productType = "com.apple.product-type.application";
 		};
+		E1E10F4C22454491005B2D0C /* OneFi-MovieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E1E10F5422454491005B2D0C /* Build configuration list for PBXNativeTarget "OneFi-MovieTests" */;
+			buildPhases = (
+				E1E10F4922454491005B2D0C /* Sources */,
+				E1E10F4A22454491005B2D0C /* Frameworks */,
+				E1E10F4B22454491005B2D0C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E1E10F5322454491005B2D0C /* PBXTargetDependency */,
+			);
+			name = "OneFi-MovieTests";
+			productName = "OneFi-MovieTests";
+			productReference = E1E10F4D22454491005B2D0C /* OneFi-MovieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		E1CAEF5C2242E23300428A31 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1020;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = "Softskan Limited";
 				TargetAttributes = {
 					E1CAEF632242E23300428A31 = {
 						CreatedOnToolsVersion = 10.1;
+					};
+					E1E10F4C22454491005B2D0C = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = E1CAEF632242E23300428A31;
 					};
 				};
 			};
@@ -175,6 +229,7 @@
 			projectRoot = "";
 			targets = (
 				E1CAEF632242E23300428A31 /* OneFi-Movie */,
+				E1E10F4C22454491005B2D0C /* OneFi-MovieTests */,
 			);
 		};
 /* End PBXProject section */
@@ -187,6 +242,13 @@
 				E1CAEF752242E23600428A31 /* LaunchScreen.storyboard in Resources */,
 				E1CAEF722242E23600428A31 /* Assets.xcassets in Resources */,
 				E1CAEF6D2242E23300428A31 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E1E10F4B22454491005B2D0C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +315,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E1E10F4922454491005B2D0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1E10F5022454491005B2D0C /* OneFi_MovieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E1E10F5322454491005B2D0C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E1CAEF632242E23300428A31 /* OneFi-Movie */;
+			targetProxy = E1E10F5222454491005B2D0C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E1CAEF6B2242E23300428A31 /* Main.storyboard */ = {
@@ -399,6 +477,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SWTRT45DMM;
 				INFOPLIST_FILE = "OneFi-Movie/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -418,6 +497,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SWTRT45DMM;
 				INFOPLIST_FILE = "OneFi-Movie/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -426,6 +506,48 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E1E10F5522454491005B2D0C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SWTRT45DMM;
+				INFOPLIST_FILE = "OneFi-MovieTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Softskan-Limited.OneFi-Movie.OneFi-MovieTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneFi-Movie.app/OneFi-Movie";
+			};
+			name = Debug;
+		};
+		E1E10F5622454491005B2D0C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SWTRT45DMM;
+				INFOPLIST_FILE = "OneFi-MovieTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Softskan-Limited.OneFi-Movie.OneFi-MovieTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OneFi-Movie.app/OneFi-Movie";
 			};
 			name = Release;
 		};
@@ -446,6 +568,15 @@
 			buildConfigurations = (
 				E1CAEF7A2242E23600428A31 /* Debug */,
 				E1CAEF7B2242E23600428A31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E1E10F5422454491005B2D0C /* Build configuration list for PBXNativeTarget "OneFi-MovieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1E10F5522454491005B2D0C /* Debug */,
+				E1E10F5622454491005B2D0C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
