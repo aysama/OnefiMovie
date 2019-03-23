@@ -2,8 +2,8 @@
 //  OneFi_MovieTests.swift
 //  OneFi-MovieTests
 //
-//  Created by Olatunji Fagbore on 22/03/2019.
-//  Copyright © 2019 Softskan Limited. All rights reserved.
+//  Created by Ayoola Samagbeyi on 21/03/2019.
+//  Copyright © 2019 Ayoola Samagbeyi. All rights reserved.
 //
 
 import XCTest
@@ -36,18 +36,5 @@ class OneFi_MovieTests: XCTestCase {
         
         XCTAssertNotNil(vc.collectionView)
     }
-    
-    
-    //Check TableView on DetailsPage
-    func testTableView() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let home = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-        let vc = storyboard.instantiateViewController(withIdentifier: "movieDetails") as! DetailViewController
-        _ = vc.view
-        //vc.detailArray = home.collectionData[0]
-
-        XCTAssertNotNil(vc.tableView)
-    }
-    
 
 }
